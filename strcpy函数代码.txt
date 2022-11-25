@@ -1,0 +1,15 @@
+char* StrCpy(char* src)
+{
+int i=0,len=0;
+while(src[i]!=0){
+len++;
+i++;
+}
+char* n;
+n=(char* )malloc((len+1)*sizeof(char));
+for(i=0;i<len;i++){
+	n[i]=src[i];
+}
+n[len]='\0';
+return n;
+}
